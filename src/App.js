@@ -8,11 +8,11 @@ import api from './api';
 class App extends React.Component{
 
   state =  {
-    api
+    api: api
   }
 
   addToFav = (id) => {
-    // console.log("Obect id", id);
+    console.log("Obect id", id);
     // pull from api that matches the object id
     let newBeyArray = [...this.state.api];
     let foundObj = newBeyArray.find(element => element.id === id);
